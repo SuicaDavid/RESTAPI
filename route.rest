@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/60b3b925bb4d4c326e7c0651
+
+###
+
+POST http://localhost:3000/subscribers 
+Content-Type: application/json
+
+{
+    "name": "Suica",
+    "subscribedToChannel": "The Verge"
+}
+
+### 
+DELETE http://localhost:3000/subscribers/60b3b927bb4d4c326e7c0652
+
+
+### 
+PATCH http://localhost:3000/subscribers/60b3b925bb4d4c326e7c0651
+Content-Type: application/json
+
+{
+    "name": "Suica Daivd",
+    "subscribedToChannel": "The MKBHD"
+}
